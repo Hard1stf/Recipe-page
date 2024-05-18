@@ -1,0 +1,202 @@
+@font-face {
+    font-family: 'Young Serif';
+    src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: 'recipes';
+    src: url(./assets/fonts/baguette/Baguette.ttf) format(truetype);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(30, 54%, 90%);
+    /* height: 100vh; */
+    font-family: 'Outfit', sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block: 200px;
+    margin-inline: 25px;
+    flex-direction: column;
+}
+
+.beginning {
+    font-family: 'recipes', sans-serif;
+    font-size: 5rem;
+    margin-top: -100px;
+    margin-bottom: 100px;
+    /* flex-shrink: 3; */
+}
+
+.main-card {
+    background-color: hsl(0, 0%, 100%);
+    max-width: 700px;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.main-card img {
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.main-card h1 {
+    font-family: 'Young Serif';
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.main-card p {
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 35px;
+}
+
+.prep {
+    background-color: hsl(330, 100%, 98%);
+    padding-inline: 40px;
+    padding-block: 25px;
+    border-radius: 15px;
+    list-style: inside;
+}
+
+.point {
+    font-weight: 700;
+}
+
+.prep-time h2 {
+    padding-bottom: 10px;
+    color: hsl(332, 51%, 32%);
+}
+
+.prep-time li {
+    line-height: 40px;
+    color: hsl(30, 10%, 34%);
+}
+
+.ingredients-con {
+    margin-block: 40px;
+    list-style: inside;
+}
+
+.ingredients-con h2 {
+    font-family: 'Young Serif';
+    color: hsl(19, 42%, 37%);
+    margin-bottom: 20px;
+}
+
+.ingr-li li {
+    /* margin-inline: 20px; */
+    margin-left: 20px;
+    line-height: 30px;
+    color: hsl(30, 10%, 34%);
+
+}
+
+.hr-line {
+    background-color: #e0e0e0;
+    height: 1.5px;
+    width: auto;
+}
+
+.instructions-con {
+    margin-block: 40px;
+}
+
+.instructions-con h2 {
+    font-family: 'Young Serif';
+    color: hsl(19, 42%, 37%);
+    margin-bottom: 20px;
+}
+
+.instr-li li {
+    margin-left: 20px;
+    line-height: 20px;
+    font-weight: 600;
+    color: hsl(19, 42%, 37%);
+}
+
+.instr-li strong {
+    color: hsl(30, 10%, 34%);
+}
+
+.instr-li p {
+    /* margin-inline: 10px; */
+    margin-inline: 20px;
+}
+
+.nutrition {
+    margin-block: 40px;
+}
+
+.nutrition h2 {
+    margin-bottom: 20px;
+    color: hsl(19, 42%, 37%);
+    font-family: 'Young Serif';
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    /* padding: 0px; */
+}
+
+.color-style {
+    color: hsl(19, 42%, 37%);
+    font-weight: 700;
+}
+
+td {
+    padding-block: 10px;
+    padding-inline: 60px;
+    text-align: left;
+    border-bottom: 1px solid hsl(0, 0%, 87%);
+}
+
+.last-item {
+    border: none;
+}
+
+.ending {
+    font-family: 'recipes';
+    font-size: 4rem;
+    margin-top: 150px;
+    /* flex-shrink: 2; */
+}
+
+@media(max-width:510px) {
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-block: 130px;
+        margin-inline: 25px;
+    }
+
+    .beginning {
+        font-size: 3rem;
+        margin-top: -50px;
+        margin-bottom: 60px;
+    }
+
+    .ending {
+        font-size: 2rem;
+        margin-bottom: 80px;
+    }
+}
